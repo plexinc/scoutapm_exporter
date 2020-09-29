@@ -19,17 +19,17 @@ docker-compose build
 docker-compose up
 ```
 
-# Configuration
+# Configuration
 
 You can set some env variables to make it work the way you want
 
-| Env variable | Default | Mandatory | Notes |
-| ------------ | ------- | --------- | ----- |
-| scoutapm_apikey | N/A | yes | Scoutapm API Key |
-| monitored_apps | Evert app | No | comma separated list of apps name you want to monitor |
-| time_between_polls | 60 | No | Interval in seconds between each polls |
-| metric_name_prefix | scoutapm | No | Prefix name to add to the metric |
-| port | 8000 | No | Port to bind the http server |
+|Env variable|Default|Mandatory|Notes|
+|------------|-------|---------|-----|
+|scoutapm_apikey | N/A | yes | Scoutapm API Key |
+|monitored_apps | Evert app | No | comma separated list of apps name you want to monitor |
+|time_between_polls | 60 | No | Interval in seconds between each polls |
+|metric_name_prefix | scoutapm | No | Prefix name to add to the metric |
+|port|8000|No|Port to bind the http server|
 
 # Develop on a local version
 
