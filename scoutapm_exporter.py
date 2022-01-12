@@ -6,7 +6,7 @@ from time import sleep
 from datetime import datetime, timedelta, timezone
 from prometheus_client import start_http_server, Gauge
 
-base_url = "https://scoutapp.com"
+base_url = "https://scoutapm.com"
 apikey = os.environ.get('scoutapm_apikey')
 monitored_apps = os.environ.get('monitored_apps','').split(',')
 time_between_polls = os.environ.get("time_between_polls", 60)
