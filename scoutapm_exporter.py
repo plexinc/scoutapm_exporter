@@ -70,7 +70,9 @@ if __name__ == '__main__':
     while True:
         for metric_info in data:
             app_name, app_id, metric_name = metric_info
-            metrics[metric_name].labels(app_name=app_name).set(extract_metrics(metric_info))
+            value = extract_metrics(metric_info)
+            if value is not None:
+                metrics[metric_name].labels(app_name=app_name).set(extract_metrics(metric_info))
         # We don't get data updated every seconds, so let's wait 1 minute between polls
         print("Waiting %d seconds" % time_between_polls)
         sleep(time_between_polls)
