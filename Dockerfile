@@ -1,4 +1,4 @@
-FROM python:3.8
+FROM python:3.10
 ENV port 8000
 EXPOSE ${port}
 WORKDIR /usr/src/app
